@@ -1,0 +1,112 @@
+
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 784px;
+    height: 784x;
+    margin-top: 2rem;
+    background-color: black;
+}
+
+.grid div{
+    width: 28px;
+    height: 28px;
+  
+}
+
+.pac-dot{
+    background-image: url(images/yellowDot.png);
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+ 
+
+}
+
+.wall {
+    position: relative;
+}
+
+.wall::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid blue;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: black;
+    box-shadow: 0 0 10px blue; 
+}
+.power-pellet{
+    background-image: url(images/pinkDot.png);
+    box-sizing: border-box;
+ 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.empty{
+    background-color: black;
+}
+.ghost-lair{
+    background-color: rgb(22, 22, 22);
+}
+
+.ghost-area-gates{
+   
+    border: transparent;
+    background-color: rgb(7, 204, 238);
+    box-shadow: 0 0 40px rgb(0, 238, 234); 
+    
+}
+
+.pac-man{
+background-color: yellow;
+border-radius: 20px;
+  width: 17px;
+  height: 17px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  
+}
+
+
+
+body{
+    background-color: rgb(67, 67, 67);
+    display: flex;
+    justify-content: center;
+  
+}
+
+
+.blinky{
+    background-color: red;
+    border: 0px;
+}
+
+.pinky{
+    background-color: pink;
+    border: 0px;
+}
+
+.inky{
+    background-color: cyan;
+    border: 0px;
+}
+
+.clyde{
+    background-color: orange;
+    border: 0px;
+}
+
+.scared-ghost{
+    background-color:aquamarine ;
+    border: 0px;
+}
